@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import FIrstJsx from './Component/FIrstJsx';
+
+
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FIrstJsx title = "Hello Dojo!" subtitle = "Things I need to do" todo ="Learn React" />
+      <FIrstJsx todo = "Climb Mt. Everest" />
+      <FIrstJsx todo = "Run a marathon" />
+      <FIrstJsx todo = "Feed the dogs" />
     </div>
   );
 }
